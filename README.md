@@ -1,10 +1,13 @@
 ## Notes on [FRONTEERS Conference 2016](https://fronteers.nl/congres/2016)
 
+Follow on [twitter](https://twitter.com/FronteersConf)
+Listen to [soundtrack for Fronteers Conference 2016](http://track.ml.mailersend.com/link/c/YT00NzAxNDgxMzY0NTk4MzA0OTkmYz1wNmgxJmU9NDM3MTgyNyZiPTYzNDgxNzQxJmQ9cThuN3g0Yw==.NqCGWBgCoZvcS8qpwJDc9b7JIyrI4lGHBGQ5fagBx9k)
+
 **Thursday October 6, 2016**
 * [Progressive Enhancement and CSS - Ire Aderinokun](#06-0900)
 * [Hacking the Visual Norm - Nadieh Bremer](#06-0950)
 * [How You Do What You Do Is Who You Are - G. Scott Olson](#06-1110)
-* [Offline, Progressive, and Multithreaded: a Peek at the… - Nolan Lawson](#06-1200)
+* [Offline, Progressive, and Multithreaded: a Peek at the web apps of the future - Nolan Lawson](#06-1200)
 * [Multi-user WebVR or: Wait, Who Are These People? - Martin Splitt](#06-1350)
 * [Big Data, Big Impact - Lodewijk Nauta](#06-1440)
 * [Scaling Front End Development - Monika Piotrowicz](#06-1600)
@@ -21,7 +24,7 @@
 * [Joining Up the Dots - Heydon Pickering](#07-1650)
 
 <a name="06-0900"></a>
-## Progressive Enhancement and CSS - Ire Aderinokun
+## What about CSS? Progressive Enhancement and CSS - Ire Aderinokun
 > __Ire Aderinokun__ |
  [Twitter](https://twitter.com/ireaderinokun) |
  [GitHub](https://github.com/ireade) |
@@ -30,6 +33,81 @@
 > _When we speak of Progressive Enhancement, we usually talk about making our sites functional with limited or no Javascript. But what about CSS? Progressive enhancement is about taking into account the sometimes limited capabilities of browsers, and this includes their support for CSS features._
 
 > _In this talk, we go over the difficulty of writing progressively enhancive CSS, and some tips on how to overcome it._
+
+[Inclusive Web Design for the Future - Stephen Champeon (at SXSW)](http://hesketh.com/publications/inclusive_web_design_for_the_future/)
+
+Problems graceful degredation (according to this talk)
+- Doesn't straddle technology inflection points well
+- Many designers only test one version back
+- Does not address the different needs of different audiences
+- It's expensive to retrofit to new alternative devices
+- Whatever is 'good enough' usually rules
+
+**5 Guidelines for Progressive Enhancement**
+- Basic content and functionality should be accessible to all web browsers.
+- Sparse, semantic markup should contain all content. Content should be defined in plain text in the markup.
+- Enhanded layout can be provided by CSS stylesheets.
+- Enhanced behavior can be provided by unobtrusive JS.
+- End-user web browser preferences should be respected.
+
+More browsers, versions, technologies, people online
+
+**Progressive Enhancement & JS**
+- Make the website functional without JS.
+- Detect feature support.<br>
+```javascript
+if( 'service worker' in navigator ) {
+	// Do stuff with service worker
+}
+```
+- Polyfill unsupported features.<br>
+```javascript
+if( !('Promise' in self) ) {
+	loadScript('promise-polyfill.js')
+}
+```
+
+**Progressive Enhancement & HTML**
+- Add aria roles<br>
+`<header role="banner">`<br>
+`<main role="main">`
+
+selector, property & value
+
+**Progressive Enhancement & CSS**
+- start with sensible HTML<br>
+Progressive Enhancement M&M (Dave Stewart)
+[![alt text](http://alistapart.com/d/understandingprogressiveenhancement/m-m.jpg "http://alistapart.com/d/understandingprogressiveenhancement/m-m.jpg")](http://alistapart.com/article/understandingprogressiveenhancement)
+
+- Take advantage of the cascade (fallback eerst declareren)
+- Go "mobile-first"<br>
+min-width > max-width<br>
+start with `%`, later one can use `px`
+**Read more:** [How to be Successful with Responsive Sites ](http://www.slideshare.net/Koombea/how-to-be-successful-with-responsive-sites-koombea-nginx-english)
+- Use flexblox<br>
+first `display: table-cell;`<br>
+later `display: flex;`
+- Seperate stylesheets<br>
+Last resort<br>
+**Read more:** [BBC News on responsive design](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard)
+
+**What about feature queries?**<br>
+```css
+@supports ( display: flex ) and/or ( /* something */ ) {
+	.foo { display: flex; }
+}
+```
+```css
+@supperts not ( display: flex ) {
+	.foo { display: table; }
+}
+```
+
+CanIUse.com says one cannot use this in IE and Opera Mini<br>
+Other browsers/versions DO support `@support`<br>
+**Read more:** [Jen Simmons - Using feature queries in CSS](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/)
+
+Use feature queries as a progressive enhancement; make use of the cascading effect of CSS and code with a fallback.
 
 **Slides: 	[speakerdeck.com/ireade](https://speakerdeck.com/ireade/what-about-css-progressive-enhancement-and-css)**
 
@@ -46,33 +124,69 @@
 
 > _During this talk, Nadieh will take you through several of her data visualization projects, both from the business environment of her day job and the experiments made in her evenings. Hopefully, by the end you’ll want to step outside of your "visualization" comfort zone and create (custom) charts that best display the insights in the data._
 
+Amazing datavisualisation skills!!
+
+Worked at [Adyen](https://www.adyen.com/).<br>
+Uses [voronoi diagrams](https://en.wikipedia.org/wiki/Voronoi_diagram).<br>
+Collaborates with [Shirley Wu](http://sxywu.com/) on [data sketch|es](http://www.datasketch.es/).<br>
+**To do:** check out [D3.js](https://d3js.org/) and [bl.ocks.org](https://bl.ocks.org/)
+
 **Slides: 	[nbremer.github.io/hackingthevisualnorm](https://nbremer.github.io/hackingthevisualnorm/)**
 
 ============================================================
 <a name="06-1110"></a>
 ## How You Do What You Do Is Who You Are - G. Scott Olson
-> __Scott Olson__ |
+> __G. Scott Olson__ |
  [Twitter](https://twitter.com/gscottolson) |
  [GitHub](https://github.com/gscottolson) |
  [Website](https://paper.fiftythree.com/scott) |
 
 > _React JS makes it easy to build rich, maintainable web applications. But once you are up and running, there are a handful of less-documented tweaks that you can implement to improve the UX and DX of your project._
 
-> _Over the past 2.5 years, my team at FiftyThree has been building and maintaining the React web experience for Paper (http://paper.fiftythree.com). We have focused our energy to make developing and using our React app more enjoyable for everyone. Preloading images, optimistically rendering the user interface and linting your code may sound like small details, but adding them up can drastically improve how users and fellow developers perceive of your app. We have been in the trenches, fighting the good fight, and now I’m ready to share our successes, mistakes and experiences._
+> _Over the past 2.5 years, my team at FiftyThree has been building and maintaining the React web experience for [Paper](http://paper.fiftythree.com). We have focused our energy to make developing and using our React app more enjoyable for everyone. Preloading images, optimistically rendering the user interface and linting your code may sound like small details, but adding them up can drastically improve how users and fellow developers perceive of your app. We have been in the trenches, fighting the good fight, and now I’m ready to share our successes, mistakes and experiences._
+
+Some nifty stuff & gadgets: [Paper](https://www.fiftythree.com/paper), [Pencil](https://www.fiftythree.com/pencil) and [Mix](https://www.youtube.com/watch?v=BjKtCyXNSTg) \#like
+
+Which parts need to be seamless, and for which pages it is OK to have a full refresh. How to manage placeholders in React. Also read the [blogpost on this matter](http://making.fiftythree.com/fluid-text-inputs/).<br>
+Seen from a **a11y** point of view, this isn't really the best solution though :-(
 
 **Slides: 	...**
 
 ============================================================
 <a name="06-1200"></a>
-## Offline, Progressive, and Multithreaded: a Peek at the… - Nolan Lawson
+## Offline, Progressive, and Multithreaded: a Peek at the web apps of the future - Nolan Lawson
 > __Nolan Lawson__ |
  [Twitter](https://twitter.com/nolanlawson/) |
  [GitHub](https://github.com/nolanlawson) |
  [Website](https://nolanlawson.com/) |
 
-> _In recent years, the web has been evolving at a blistering rate. Phrases like "progressive web app," "offline-first," and "server-side rendering" are tossed around with abandon. What are all these technologies, though, and why should we care?_
+> _In recent years, the web has been evolving at a blistering rate. Phrases like "progressive web app", "offline-first", and "server-side rendering" are tossed around with abandon. What are all these technologies, though, and why should we care?_
 
 > _In this talk, I'll explore work that's being done in open-source JavaScript tooling to make the web faster, more responsive, and more reliable, as well as a glimpse under the covers of the Edge browser, and how we plan to ride this wave in the coming years._
+
+Factors to keep in mind when building an application:
+* Offline
+* Progressive
+* Multithreaded
+
+### Offline
+Build websites offline first. Not only for people in metros or planes.
+Use of local cache makes site faster.<br>
+[Latency numbers every programmer should know](https://gist.github.com/hellerbarde/2843375)
+
+### Progressive
+"In 2016, it's okay to build a website that doesn't work without JavaScript."<br>
+Loads of big sites don't work with JS.<br>
+> Video: **Tom Dale - Responsive Field Day 2015**<br>
+> [![Tom Dale - Responsive Field Day 2015](http://img.youtube.com/vi/puOrC7cfjRI/0.jpg)](https://youtu.be/puOrC7cfjRI)
+
+### Multithreaded
+Why? Janky/slow... Mobiles nowadays have 4+ cores, so let's make use of that.
+
+> Video: **Nordic.js 2016 • Evan You - Demystifying Frontend Framework Performance**<br>
+> [![Nordic.js 2016 • Evan You - Demystifying Frontend Framework Performance](http://img.youtube.com/vi/Ag-1wmHWwS4/0.jpg)](https://youtu.be/Ag-1wmHWwS4)
+
+Excerpt: "Offline first!"
 
 **Slides: 	[nolanlawson.github.io/fronteers-2016](https://nolanlawson.github.io/fronteers-2016/#/)**
 
@@ -220,6 +334,10 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 
 > _Bruce will bring facts and figures from his years living in Asia and from working for Opera (often the only browser that people can use) to show you how to bring your brands to new markets._
 
+![alt text](https://img.buzzfeed.com/buzzfeed-static/static/2015-02/27/15/enhanced/webdr14/anigif_enhanced-14643-1425068912-32.gif "You've been rickrolled! :-)")
+
+
+
 **Slides: 	[speakerdeck.com/brucel](https://speakerdeck.com/brucel/parisweb-paris-30-september-2016)**
 
 ============================================================
@@ -259,5 +377,5 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 * [Nienke Dekker/](https://github.com/nienkedekker/fronteers-2016)
 * [Pim Derks - day one](https://gist.github.com/PimDerks/d2b339d567ab0759fc2e648dcd3c4c19)
 * [Pim Derks - day two](https://gist.github.com/PimDerks/fc2b3c30e8b7a985a496512eda705079)
-* [Ruben Janssen - day one](https://github.com/RubenJnl/Fronteers/blob/master/* Fronteers16/%23Fronteers16%20day%20one.md)
+* [Ruben Janssen - day one](https://github.com/RubenJnl/Fronteers/blob/master/Fronteers16/%23Fronteers16%20day%20one.md)
 * [Ruben Janssen - day one](https://github.com/RubenJnl/Fronteers/blob/master/Fronteers16/%23Fronteers16%20day%20two.md)
