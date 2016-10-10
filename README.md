@@ -1,6 +1,6 @@
 ## Notes on [FRONTEERS Conference 2016](https://fronteers.nl/congres/2016)
 
-Follow on [twitter](https://twitter.com/FronteersConf)
+Follow on [twitter](https://twitter.com/FronteersConf)<br>
 Listen to [soundtrack for Fronteers Conference 2016](http://track.ml.mailersend.com/link/c/YT00NzAxNDgxMzY0NTk4MzA0OTkmYz1wNmgxJmU9NDM3MTgyNyZiPTYzNDgxNzQxJmQ9cThuN3g0Yw==.NqCGWBgCoZvcS8qpwJDc9b7JIyrI4lGHBGQ5fagBx9k)
 
 **Thursday October 6, 2016**
@@ -34,8 +34,7 @@ Listen to [soundtrack for Fronteers Conference 2016](http://track.ml.mailersend.
 
 > _In this talk, we go over the difficulty of writing progressively enhancive CSS, and some tips on how to overcome it._
 
-[Inclusive Web Design for the Future - Stephen Champeon (at SXSW)](http://hesketh.com/publications/inclusive_web_design_for_the_future/)
-
+[Inclusive Web Design for the Future - Stephen Champeon (at SXSW)](http://hesketh.com/publications/inclusive_web_design_for_the_future/)<br>
 Problems graceful degredation (according to this talk)
 - Doesn't straddle technology inflection points well
 - Many designers only test one version back
@@ -43,7 +42,7 @@ Problems graceful degredation (according to this talk)
 - It's expensive to retrofit to new alternative devices
 - Whatever is 'good enough' usually rules
 
-**5 Guidelines for Progressive Enhancement**
+### 5 Guidelines for Progressive Enhancement
 - Basic content and functionality should be accessible to all web browsers.
 - Sparse, semantic markup should contain all content. Content should be defined in plain text in the markup.
 - Enhanded layout can be provided by CSS stylesheets.
@@ -52,7 +51,7 @@ Problems graceful degredation (according to this talk)
 
 More browsers, versions, technologies, people online
 
-**Progressive Enhancement & JS**
+### Progressive Enhancement & JS
 - Make the website functional without JS.
 - Detect feature support.<br>
 ```javascript
@@ -67,15 +66,15 @@ if( !('Promise' in self) ) {
 }
 ```
 
-**Progressive Enhancement & HTML**
+### Progressive Enhancement & HTML
 - Add aria roles<br>
 `<header role="banner">`<br>
 `<main role="main">`
 
 selector, property & value
 
-**Progressive Enhancement & CSS**
-- start with sensible HTML<br>
+### Progressive Enhancement & CSS
+- Start with sensible HTML<br>
 Progressive Enhancement M&M (Dave Stewart)
 [![alt text](http://alistapart.com/d/understandingprogressiveenhancement/m-m.jpg "http://alistapart.com/d/understandingprogressiveenhancement/m-m.jpg")](http://alistapart.com/article/understandingprogressiveenhancement)
 
@@ -84,14 +83,16 @@ Progressive Enhancement M&M (Dave Stewart)
 min-width > max-width<br>
 start with `%`, later one can use `px`
 **Read more:** [How to be Successful with Responsive Sites ](http://www.slideshare.net/Koombea/how-to-be-successful-with-responsive-sites-koombea-nginx-english)
+
 - Use flexblox<br>
 first `display: table-cell;`<br>
 later `display: flex;`
+
 - Seperate stylesheets<br>
 Last resort<br>
 **Read more:** [BBC News on responsive design](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard)
 
-**What about feature queries?**<br>
+### What about feature queries?
 ```css
 @supports ( display: flex ) and/or ( /* something */ ) {
 	.foo { display: flex; }
@@ -124,7 +125,7 @@ Use feature queries as a progressive enhancement; make use of the cascading effe
 
 > _During this talk, Nadieh will take you through several of her data visualization projects, both from the business environment of her day job and the experiments made in her evenings. Hopefully, by the end you’ll want to step outside of your "visualization" comfort zone and create (custom) charts that best display the insights in the data._
 
-Amazing datavisualisation skills!!
+Amazing data visualisation skills!!
 
 Worked at [Adyen](https://www.adyen.com/).<br>
 Uses [voronoi diagrams](https://en.wikipedia.org/wiki/Voronoi_diagram).<br>
@@ -202,6 +203,15 @@ Excerpt: "Offline first!"
 
 > _Let's explore what we can do together by combining the technologies to create a universe that we can explore together and what is yet uncharted land that we can discover._
 
+Cool VR stuff & lots of demo's \#like
+
+Links/ things to try out:
+- [webvr.info](https://webvr.info/)
+- [A-Frame](https://aframe.io/)
+- [SceneVR](http://www.scenevr.com/)
+- [Archilogic](https://spaces.archilogic.com/)
+- [Sketchfab](https://sketchfab.com/)
+
 **Slides: 	[docs.google.com](https://docs.google.com/presentation/d/1h1JeRFoxL_Vp4hFQrsqvGe-tM-02PPMG5p9tBwpW-bQ/edit)**
 
 ============================================================
@@ -211,7 +221,7 @@ Excerpt: "Offline first!"
 > _Using examples from real life Big Data cases Lodewijk Nauta is going to talk about how his team made a bigger impact at their clients by changing the way they presented their results. When your clients want their business to evolve towards a more data-driven way of operating, the delivery of visualizations has to evolve as well. The data that is used in the analyses includes fitbit movement data, email usage but also tracking how people move through a restaurant._
 
 Basically just a sales pitch for KPMG<br>
-(a rather poor one in my opinion: it lacked in decent research - not factoring all the usefull elements - & was filled with random assumptions and conclusions)
+(a rather poor one in my opinion: it lacked in decent research - not factoring in all the usefull elements - & was filled with random assumptions and conclusions)
 
 ============================================================
 <a name="06-1600"></a>
@@ -223,6 +233,48 @@ Basically just a sales pitch for KPMG<br>
 > _As a discipline, front end development (FED) has recently seen enormous growth with new focus areas like performance, design patterns, build tools, and frameworks emerge and mature. There’s a lot of new excitement for all things client-side, but how do these new technologies fit alongside a traditional Engineering team and an existing code base?_
 
 > _At Shopify, we’ve been exploring the dynamic more closely as our FED team continues to grow company-wide. In this talk, I will share my perspective on how FED can work alongside other disciplines to form robust, creative product teams at scale. Shared tools like coding standards, processes, and style guides, can make it possible for all developers to confidently build UI, while specialist FED build those systems and solve unique use cases. By investing in in tools and process, we’ve been able to find common focus for our team and a stronger understanding of our role across disciplines._
+
+### Defining FED
+Front end nowadays is so much more than just `HTML`, `CSS` and `JavaScript`.
+
+### Building a Craft
+**1) Language styleguides**
+- Shared coding standards
+- Consistency is key
+- Helps team members read each other’s code
+- Helps you read your own code 6 months from now
+
+Examples:
+- http://cssguidelin.es/
+- http://sass-guidelin.es/
+- https://github.com/Shopify/javascript
+- https://github.com/rwaldron/idiomatic.js/
+- https://google.github.io/styleguide/javascriptguide.xml
+
+**2) Code reviews**
+- Support & grow your guide
+- Standards to make things easier
+- If hard to enforce, it might not be useful
+- Shared deﬁnition of quality
+- Builds a culture of feedback and knowledge sharing
+
+**3) Pattern libraries**
+- A way to pool our efforts
+- Make it possible to share code automatically
+- A starting point for new projects
+
+Think about:
+- A common stack(s)
+- Responsive guidelines - easy defaults for breakpoints, ﬂexible grids, starting points for styling and behavior, testing standards
+- Performance standards & language tooling
+- Accessibility best practices
+
+### Building a Culture
+- Have more conversations
+- Continue to scale
+- Find & follow opportunities for impact
+
+Excerpt: "Teach, build, review."
 
 **Slides: 	[slideshare.net/mpiotrowicz](http://www.slideshare.net/mpiotrowicz/building-scaling-a-front-end-practice-team)**
 
@@ -238,6 +290,8 @@ Basically just a sales pitch for KPMG<br>
 
 > _This talk will raise and try to answer questions such as: what is the role of the web in the new landscape? And what are the threats to, and opportunities for, the open web and web development?_
 
+...
+
 **Slides: 	[speakerdeck.com/stopsatgreen](https://speakerdeck.com/stopsatgreen/surveying-the-landscape-fronteers)**
 
 ============================================================
@@ -251,6 +305,8 @@ Basically just a sales pitch for KPMG<br>
 > _Responsive Web Design has forced us to accept that we don't know the size of our canvas, and we've learned to embrace the squishiness of the web. Input, it turns out, is every bit as challenging as screen size. We have tablets with keyboards, laptops that become tablets, laptops with touch screens, phones with physical keyboards, and even phones that become desktop computers._
 
 > _In this session, Jason will guide you through the input landscape, showing you new forms of input like sensors and voice control, as well as new lessons about old input standbys. You'll learn the design principles necessary to build web sites that respond and adapt to whatever input people use._
+
+...
 
 **Slides: 	[speakerdeck.com/grigs](https://speakerdeck.com/grigs/adapting-to-input)**
 
@@ -286,8 +342,8 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 > _In his talk, Zell aims to share with you his experiences and approach on building responsive, reusable components. He goes deep into the granular level (and even discusses what units he recommends you to use)._
 
 `rem` versus `em`
-* `rem` is based on root font size (of the body)
-* `em` is based on the containing element
+- `rem` is based on root font size (of the body)
+- `em` is based on the containing element
 
 **Slides: 	[github.com/zellwk](https://github.com/zellwk/responsive-css-components-slides)**
 
@@ -305,6 +361,8 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 
 > _If you were to implement even one of the standards I'm going to talk about today, you'd probably be doing better than your bank!_
 
+...
+
 **Slides: 	[CSP STS PKP SRI ETC OMG WTF BBQ.pdf](https://scotthelme.co.uk/static/talks/CSP%20STS%20PKP%20SRI%20ETC%20OMG%20WTF%20BBQ.pdf)**
 
 ============================================================
@@ -319,6 +377,8 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 > _Animation is captivating. Our brains are trained to respond most intently to movement. For this reason, animation in a user experience is extremely important, and also very easy to overdo. Carefully considered animation can compose spatial maps to guide users. Animations can be responsive, resolution-independent, and make a site function intuitively._
 
 > _In this session Sarah will cover a myriad of use cases, from both design and technical implementation standpoints._
+
+...
 
 **Slides: 	[slides.com/sdrasner](http://slides.com/sdrasner/functional-fronteers#/)**
 
@@ -336,7 +396,7 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 
 ![alt text](https://img.buzzfeed.com/buzzfeed-static/static/2015-02/27/15/enhanced/webdr14/anigif_enhanced-14643-1425068912-32.gif "You've been rickrolled! :-)")
 
-
+Just watch the [video](https://youtu.be/uqVRz8CteAg)
 
 **Slides: 	[speakerdeck.com/brucel](https://speakerdeck.com/brucel/parisweb-paris-30-september-2016)**
 
@@ -356,6 +416,8 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 
 > _When you're sprinting for a deadline, rapidly iterating code and using frameworks and build tools to make it happen, accessibility can feel like one thing too many. So how the hell do you keep your code accessible as you go?_
 
+...
+
 **Slides: 	[ljwatson.github.io](http://ljwatson.github.io/decks/2016/fronteers/index.html)**
 
 ============================================================
@@ -370,11 +432,13 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 
 > _This talk explores the Web as the ultimate outcome of our impulse to make systems of shared meaning, and addresses threats to the Web's public and interconnected nature from within and without its technical development. Deforestation, Hegelian dialectics, sharks, Waldorf salads, positivism and Kanye West are all part of the talk's precarious, though still ultimately interconnected, content._
 
+...
+
 **Slides: 	[slides.com/heydon](http://slides.com/heydon/joining-up-the-dots#/)**
 
 ============================================================
 ### More info/ other notes from attendees:
-* [Nienke Dekker/](https://github.com/nienkedekker/fronteers-2016)
+* [Nienke Dekker](https://github.com/nienkedekker/fronteers-2016)
 * [Pim Derks - day one](https://gist.github.com/PimDerks/d2b339d567ab0759fc2e648dcd3c4c19)
 * [Pim Derks - day two](https://gist.github.com/PimDerks/fc2b3c30e8b7a985a496512eda705079)
 * [Ruben Janssen - day one](https://github.com/RubenJnl/Fronteers/blob/master/Fronteers16/%23Fronteers16%20day%20one.md)
