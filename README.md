@@ -111,6 +111,7 @@ Other browsers/versions DO support `@support`<br>
 Use feature queries as a progressive enhancement; make use of the cascading effect of CSS and code with a fallback.
 
 **Slides: 	[speakerdeck.com/ireade](https://speakerdeck.com/ireade/what-about-css-progressive-enhancement-and-css)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194815985)**
 
 ============================================================
 <a name="06-0950"></a>
@@ -133,6 +134,7 @@ Collaborates with [Shirley Wu](http://sxywu.com/) on [data sketch|es](http://www
 **To do:** check out [D3.js](https://d3js.org/) and [bl.ocks.org](https://bl.ocks.org/)
 
 **Slides: 	[nbremer.github.io/hackingthevisualnorm](https://nbremer.github.io/hackingthevisualnorm/)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194817475)**
 
 ============================================================
 <a name="06-1110"></a>
@@ -152,6 +154,7 @@ Which parts need to be seamless, and for which pages it is OK to have a full ref
 Seen from a **a11y** point of view, this isn't really the best solution though :-(
 
 **Slides: 	...**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194830777)**
 
 ============================================================
 <a name="06-1200"></a>
@@ -190,6 +193,7 @@ Why? Janky/slow... Mobiles nowadays have 4+ cores, so let's make use of that.
 Excerpt: "Offline first!"
 
 **Slides: 	[nolanlawson.github.io/fronteers-2016](https://nolanlawson.github.io/fronteers-2016/#/)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194834593)**
 
 ============================================================
 <a name="06-1350"></a>
@@ -213,6 +217,7 @@ Links/ things to try out:
 - [Sketchfab](https://sketchfab.com/)
 
 **Slides: 	[docs.google.com](https://docs.google.com/presentation/d/1h1JeRFoxL_Vp4hFQrsqvGe-tM-02PPMG5p9tBwpW-bQ/edit)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194875227)**
 
 ============================================================
 <a name="06-1440"></a>
@@ -222,6 +227,8 @@ Links/ things to try out:
 
 Basically just a sales pitch for KPMG<br>
 (a rather poor one in my opinion: it lacked in decent research - not factoring in all the usefull elements - & was filled with random assumptions and conclusions)
+
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194877685)**
 
 ============================================================
 <a name="06-1600"></a>
@@ -277,6 +284,7 @@ Think about:
 Excerpt: "Teach, build, review."
 
 **Slides: 	[slideshare.net/mpiotrowicz](http://www.slideshare.net/mpiotrowicz/building-scaling-a-front-end-practice-team)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194961049)**
 
 ============================================================
 <a name="06-1650"></a>
@@ -293,6 +301,7 @@ Excerpt: "Teach, build, review."
 ...
 
 **Slides: 	[speakerdeck.com/stopsatgreen](https://speakerdeck.com/stopsatgreen/surveying-the-landscape-fronteers)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194961226)**
 
 ============================================================
 <a name="07-0900"></a>
@@ -309,6 +318,7 @@ Excerpt: "Teach, build, review."
 ...
 
 **Slides: 	[speakerdeck.com/grigs](https://speakerdeck.com/grigs/adapting-to-input)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194967832)**
 
 ============================================================
 <a name="07-0950"></a>
@@ -326,6 +336,7 @@ Excerpt: "Buy the book."<br>
 More info: [Other talk from Barbara on energy efficient websites](http://www.slideshare.net/bbinto/building-energyefficient-websites)
 
 **Slides: 	[slideshare.net/bbinto](http://www.slideshare.net/bbinto/cheat-sheet-to-a-lean-website)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194962379)**
 
 ============================================================
 <a name="07-1110"></a>
@@ -346,6 +357,7 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 - `em` is based on the containing element
 
 **Slides: 	[github.com/zellwk](https://github.com/zellwk/responsive-css-components-slides)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194962824)**
 
 ============================================================
 <a name="07-1200"></a>
@@ -364,6 +376,7 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 ...
 
 **Slides: 	[CSP STS PKP SRI ETC OMG WTF BBQ.pdf](https://scotthelme.co.uk/static/talks/CSP%20STS%20PKP%20SRI%20ETC%20OMG%20WTF%20BBQ.pdf)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194961863)**
 
 ============================================================
 <a name="07-1350"></a>
@@ -381,6 +394,7 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 ...
 
 **Slides: 	[slides.com/sdrasner](http://slides.com/sdrasner/functional-fronteers#/)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194963386)**
 
 ============================================================
 <a name="07-1440"></a>
@@ -399,6 +413,7 @@ More info: [Other talk from Barbara on energy efficient websites](http://www.sli
 Just watch the [video](https://youtu.be/uqVRz8CteAg)
 
 **Slides: 	[speakerdeck.com/brucel](https://speakerdeck.com/brucel/parisweb-paris-30-september-2016)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194968584)**
 
 ============================================================
 <a name="07-1600"></a>
@@ -419,6 +434,7 @@ Just watch the [video](https://youtu.be/uqVRz8CteAg)
 ...
 
 **Slides: 	[ljwatson.github.io](http://ljwatson.github.io/decks/2016/fronteers/index.html)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194964027)**
 
 ============================================================
 <a name="07-1650"></a>
@@ -435,6 +451,7 @@ Just watch the [video](https://youtu.be/uqVRz8CteAg)
 ...
 
 **Slides: 	[slides.com/heydon](http://slides.com/heydon/joining-up-the-dots#/)**
+**Video: 	[vimeo.com/fronteers/videos](https://vimeo.com/194964404)**
 
 ============================================================
 ### More info/ other notes from attendees:
